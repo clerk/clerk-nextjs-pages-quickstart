@@ -12,7 +12,7 @@
     Clerk and Next.js Pages Router Quickstart 
   </h1>  
   <a href="https://www.npmjs.com/package/@clerk/clerk-js">
-    <img alt="" src="https://img.shields.io/npm/dm/@clerk/clerk-js" />
+    <img alt="Downloads" src="https://img.shields.io/npm/dm/@clerk/clerk-js" />
   </a>
   <a href="https://discord.com/invite/b5rXHjAg7A">
     <img alt="Discord" src="https://img.shields.io/discord/856971667393609759?color=7389D8&label&logo=discord&logoColor=ffffff" />
@@ -29,11 +29,11 @@
 
 Clerk is a developer-first authentication and user management solution. It provides pre-built React components and hooks for sign-in, sign-up, user profile, and organization management. Clerk is designed to be easy to use and customize, and can be dropped into any React or Next.js application.
 
-This template allows you to get started with Clerk and Next.js (App Router) in a matter of minutes, and demonstrates features of Clerk such as:
+This quickstart allows you to get started with Clerk and Next.js (pages router) in a matter of minutes, and demonstrates:
 
 - Next.js Pages Router install
 - Auth flow using Clerk's Account Portal
-- Finished application that matches our quickstart guide.
+- A finished application that matches our quickstart guide.
 
 ## Deploy
 
