@@ -1,6 +1,12 @@
-import '@/styles/globals.css'
-import { ClerkProvider, SignInButton, SignedIn, SignedOut, UserButton } from '@clerk/nextjs'
-import type { AppProps } from 'next/app'
+import "@/styles/globals.css";
+import {
+  ClerkProvider,
+  SignInButton,
+  SignedIn,
+  SignedOut,
+  UserButton,
+} from "@clerk/nextjs";
+import type { AppProps } from "next/app";
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
@@ -10,13 +16,13 @@ function MyApp({ Component, pageProps }: AppProps) {
           <SignInButton />
         </SignedOut>
         <SignedIn>
-          <UserButton />
+          <UserButton afterSignOutUrl="/" />
         </SignedIn>
       </header>
 
       <Component {...pageProps} />
     </ClerkProvider>
-  )
+  );
 }
 
 export default MyApp;
