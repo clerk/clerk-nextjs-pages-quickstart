@@ -2,12 +2,15 @@ import { SignInButton, SignedIn, SignedOut, UserButton } from "@clerk/nextjs";
 
 export default function Home() {
   return (
-    <>
-      <header>
+    <div>
+      <SignedOut>
+        <SignInButton />
+        <p>This content is public. Only signed out users can see this.</p>
+      </SignedOut>
+      <SignedIn>
         <UserButton afterSignOutUrl="/" />
-      </header>
-      <div>Your page&apos;s content can go here.</div>
-    </>
-  )
+        <p>This content is private. Only signed in users can see this.</p>
+      </SignedIn>
+    </div>
+  );
 }
-
