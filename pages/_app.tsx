@@ -10,7 +10,9 @@ import type { AppProps } from 'next/app';
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
-    <ClerkProvider {...pageProps}>
+    <ClerkProvider {...pageProps} appearance={{
+      cssLayerName: 'clerk'
+    }}>
       <header>
         <SignedOut>
           <SignInButton />
