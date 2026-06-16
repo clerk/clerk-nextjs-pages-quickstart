@@ -6,6 +6,7 @@ import {
   SignedOut,
   UserButton,
 } from '@clerk/nextjs';
+import Link from 'next/link';
 import type { AppProps } from 'next/app';
 
 function MyApp({ Component, pageProps }: AppProps) {
@@ -18,6 +19,7 @@ function MyApp({ Component, pageProps }: AppProps) {
           <SignInButton />
         </SignedOut>
         <SignedIn>
+          <Link href="/protected">Protected</Link>
           <UserButton />
         </SignedIn>
       </header>
