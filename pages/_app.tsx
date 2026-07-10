@@ -1,9 +1,8 @@
 import '@/styles/globals.css';
 import {
   ClerkProvider,
+  Show,
   SignInButton,
-  SignedIn,
-  SignedOut,
   UserButton,
 } from '@clerk/nextjs';
 import Link from 'next/link';
@@ -15,13 +14,13 @@ function MyApp({ Component, pageProps }: AppProps) {
       cssLayerName: 'clerk'
     }}>
       <header>
-        <SignedOut>
+        <Show when="signed-out">
           <SignInButton />
-        </SignedOut>
-        <SignedIn>
+        </Show>
+        <Show when="signed-in">
           <Link href="/protected">Protected</Link>
           <UserButton />
-        </SignedIn>
+        </Show>
       </header>
 
       <Component {...pageProps} />
