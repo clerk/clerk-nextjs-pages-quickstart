@@ -5,6 +5,7 @@ import {
   SignInButton,
   UserButton,
 } from '@clerk/nextjs';
+import Link from 'next/link';
 import type { AppProps } from 'next/app';
 
 function MyApp({ Component, pageProps }: AppProps) {
@@ -17,6 +18,7 @@ function MyApp({ Component, pageProps }: AppProps) {
           <SignInButton />
         </Show>
         <Show when="signed-in">
+          <Link href="/protected">Protected</Link>
           <UserButton />
         </Show>
       </header>
