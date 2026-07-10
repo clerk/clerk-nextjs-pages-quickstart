@@ -3,7 +3,7 @@ import type { GetServerSidePropsContext, InferGetServerSidePropsType } from 'nex
 
 export async function getServerSideProps(ctx: GetServerSidePropsContext) {
   // Use `getAuth()` to read the session on the server and protect this page.
-  // Unlike <SignedIn>, which only controls what renders, this is the real
+  // Unlike <Show when="signed-in">, which only controls what renders, this is the real
   // access check: a signed-out user who navigates here directly is redirected.
   const { isAuthenticated, userId } = getAuth(ctx.req);
 
