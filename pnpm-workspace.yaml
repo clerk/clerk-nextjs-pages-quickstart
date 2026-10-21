@@ -1,7 +1,5 @@
 allowBuilds:
-  '@clerk/shared': false
-  '@tailwindcss/oxide': true
-  sharp: true
-  unrs-resolver: true
+  sharp: false
+  unrs-resolver: false
 
 minimumReleaseAge: 2880
